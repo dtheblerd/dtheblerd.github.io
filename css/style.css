@@ -2,41 +2,44 @@ body {
 	font-family: 'Roboto', Helvetica;
 	background-color: #f4f4f4f4;
 	line-height: 1.75em;
-	margin: 0;
-	margin-top: 100px;
-	margin-bottom: 100px;
 }
 
 .container {
-	width: 85%;
-	margin: auto;
-	text-align: center;
+	margin:5%;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid black;
+    outline: #4da6ff solid 10px; 
 }
-.intro {
-	border-style: dashed;
-	border: 5px #ccc dashed;
-	margin-top: 10%;
+* {
+    box-sizing: border-box;
 }
-
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  border: 2px solid blue;
+}
+.flex-container .box {
+    float: left;
+    width: 50%;	
+}
+.box {
+	padding: 20px;
+}
 ul {
-	list-style-type: none;
-	padding: 0px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
 }
-ul li {
-	color:#fff;
-	background-color: #333;
-	border: 2px blue solid;
-	padding:20px;
-	margin:20px;
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
 }
-ul li a {
-	color: white;
-	text-transform: uppercase;
-	text-decoration: none;
-}
-ul li a:hover{
-	color: #b886e8;
-}
-ul li a:active{
-	color:red;
+/* Change the link color on hover */
+li a:hover {
+    background-color: #555;
+    color: white;
 }
