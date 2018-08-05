@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+}
+.col-container {
+    display: table;
+    width: 100%;
+    background-color: white;
+}
+.col {
+    display: table-cell;
+    padding: 16px;
+    width: 50%;
+    border: .5px black solid;
+}
+@media only screen and (max-width: 600px) {
+    .col { 
+        display: block;
+        width: 100%;
+    }
+}
+body {
+	font-family: 'Roboto', Helvetica;
+	line-height: 1.75em;
+	background-color:  #b3ccff;
+}
+h1 {
+	text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+/* Change the link color on hover */
+li a:hover {
+    background-color: black;
+    color: white;
+}
